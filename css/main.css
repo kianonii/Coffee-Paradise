@@ -231,6 +231,10 @@ body {
     margin-top: -10px;
 }
 
+.banner-section .bottom-widget:hover .widget-img-wrap img {
+    transform:scale(1.2);
+}
+
 .banner-section .bottom-widget:not(:last-child){
     margin-right: 30px;
 }
@@ -242,7 +246,7 @@ body {
     height: 100%;
     left: 0;
     top: 0;
-    background: linear-gradient(360deg, rgba(205, 205, 205, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
+    /* background: linear-gradient(360deg, rgba(205, 205, 205, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%); */
     box-sizing: border-box;
 }
 
@@ -253,7 +257,7 @@ body {
     object-fit: cover;
 }
 
-.banner-section .bottom-widget .widget-img-wrap img { width: 100%;}
+.banner-section .bottom-widget .widget-img-wrap img { transition: .4s all; width: 100%;}
 
 .banner-section .bottom-widget .bottom-widget-content {
     position: absolute;
@@ -1598,4 +1602,105 @@ footer {
 .presentation-section .presentation .presentation-content .btn-box .online-btn:hover {
     border: 1px solid transparent;
     background: #a6c0ac67;
+}
+
+/***** word page ****/
+
+.word-section {
+    height: 100vh;
+    background: url(../img/word-bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-section .word {
+    width: 1340px;
+    height: 627px;
+    display: flex;
+    align-items: center;
+}
+
+.word-section .word .word-content {
+    width: 810px;
+    height: 255px;
+}
+
+.word-section .word .word-content .word-title p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ACAAB0;
+}
+
+.word-section .word .word-content .word-title h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.word-section .word .word-content .btn-box { margin-top: 75px; }
+
+.word-section .word .word-content .btn-box svg { margin-left: 10px; }
+
+.word-section .word .word-content .btn-box .download-btn {
+    transition: .2s all;
+    
+    text-decoration: none;
+
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+
+    padding: 12px 23px;
+    top: 510px;
+
+    background: #F37E3C;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.word-section .word .word-content .btn-box .download-btn:hover {
+    background: #ca6b34;
+}
+
+
+.word-section .word .word-content .btn-box .online-btn {
+    transition: .2s all;
+    
+    text-decoration: none;
+
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+
+    /* or 22px */
+
+    color: #FFFFFF;
+
+    padding: 12px 23px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.word-section .word .word-content .btn-box .online-btn:hover {
+    border: 1px solid transparent;
+    background: #a6aec067;
 }
