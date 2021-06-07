@@ -420,6 +420,18 @@ body {
     z-index: 1;
 }
 
+.bestsellers-section .bestsellers-section-content .bestsellers-box .betsellers-slider::before {
+    content: '';
+
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #fff 100%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .bestsellers-section .bestsellers-section-content .bestsellers-box .bestseller {
     position: relative;
     width: 340px;
