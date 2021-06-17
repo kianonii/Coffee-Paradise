@@ -181,7 +181,7 @@ body {
 
 .banner-section .banner-section-content .btn {
     margin-top: 40px;
-    width: 200px;
+    width: 210px;
     background: #F37E3C;
     padding: 12px 22px;
 
@@ -201,7 +201,9 @@ body {
     border: 1px solid #F37E3C;
 }
 
-.banner-section .banner-section-content .btn svg { margin-left: 5px; }
+.banner-section .banner-section-content .btn:hover svg { margin-left: 15px;}
+
+.banner-section .banner-section-content .btn svg { transition: .2s all; margin-left: 10px;}
 
 .banner-section .bottom-widgets {
     position: absolute;
@@ -374,6 +376,25 @@ body {
     line-height: 22px;
 
     color: #B06345;
+}
+
+.bestsellers-section .title-box .title-link .menu-link::before {
+    transition: .2s all;
+    position: absolute;
+    content: '';
+    width: 110%;
+    left: -10px;
+    top: -5px;
+    height: 150%;
+    background: #b0634525;
+    border-radius: 6px;
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.bestsellers-section .title-box .title-link .menu-link:hover::before {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .bestsellers-section .title-box .title-link .menu-link svg {
@@ -1268,8 +1289,8 @@ footer {
 }
 
 .footer .footer-contacts-box {
-    margin-left: 270px;
-    width: 296px
+    margin-left: 220px;
+    width: 300px
 }
 
 .footer .footer-contacts-box p {
@@ -1308,8 +1329,12 @@ footer {
 }
 
 .footer .footer-social-box .footer-social .footer-social-links {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-social .footer-social-item .footer-social-link svg:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer .footer-social .footer-social-item .footer-social-link svg {
